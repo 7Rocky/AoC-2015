@@ -21,3 +21,5 @@ npm test     # or `make test`
 | [Day 01](day_01) | Not Quite Lisp                         | :star:                         |
 | [Day 02](day_02) | I Was Told There Would Be No Math      | :star:                         |
 | [Day 03](day_03) | Perfectly Spherical Houses in a Vacuum | :star:                         |
+| [Day 04](day_04) | The Ideal Stocking Stuffer             | :star:                         |
+| [Day 05](day_05) | Doesn't He Have Intern-Elves For This? | :star::star:                   |

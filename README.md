@@ -16,6 +16,8 @@ npm install
 npm test     # or `make test`
 ```
 
-| Problem          | Title                              | Difficulty                     |
-| ---------------- | ---------------------------------- | ------------------------------ |
-| [Day 01](day_01) | Not Quite Lisp                     | :star:                         |
+| Problem          | Title                                  | Difficulty                     |
+| ---------------- | -------------------------------------- | ------------------------------ |
+| [Day 01](day_01) | Not Quite Lisp                         | :star:                         |
+| [Day 02](day_02) | I Was Told There Would Be No Math      | :star:                         |
+| [Day 03](day_03) | Perfectly Spherical Houses in a Vacuum | :star:                         |

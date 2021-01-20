@@ -11,8 +11,8 @@ const GREEN_BOLD_BRIGHT = '\033[1;92m'
 const YELLOW_BOLD_BRIGHT = '\033[1;93m'
 const WHITE_BOLD_BRIGHT = '\033[1;97m'
 
-const answer1 = 'Mining number for 5 zeroes (1): 282749'
-const answer2 = 'Mining number for 6 zeroes (2): 9962624'
+const answer1 = 'Number of lights lit (1): 400410'
+const answer2 = 'Total brightness (2): 15343601'
 
 const getOutput = async () => {
   return new Promise(resolve => {

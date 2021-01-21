@@ -23,4 +23,7 @@ make test
 | [Day 04](day_04) | The Ideal Stocking Stuffer             | :star:                         |
 | [Day 05](day_05) | Doesn't He Have Intern-Elves For This? | :star::star:                   |
 | [Day 06](day_06) | Probably a Fire Hazard                 | :star:                         |
-| [Day 07](day_07) | Some Assembly Required                 | :star::star:                   |
+| [Day 07](day_07) | Some Assembly Required                 | :star::star::star:             |
+| [Day 08](day_08) | Matchsticks                            | :star::star:                   |
+| [Day 09](day_09) | All in a Single Night                  | :star::star:                   |
+| [Day 10](day_10) | Elves Look, Elves Say                  | :star::star:                   |

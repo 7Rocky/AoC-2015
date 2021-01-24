@@ -11,7 +11,7 @@ const mine = (input, zeroes, start = 1) => {
   return n
 }
 
-const main = async () => {
+const main = () => {
   const input = 'yzbqklnj'
 
   const mined = mine(input, 5)

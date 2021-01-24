@@ -28,3 +28,5 @@ make test
 | [Day 09](day_09) | All in a Single Night                  | :star::star:                   |
 | [Day 10](day_10) | Elves Look, Elves Say                  | :star::star:                   |
 | [Day 11](day_11) | Corporate Policy                       | :star::star:                   |
+| [Day 12](day_12) | JSAbacusFramework.io                   | :star::star:                   |
+| [Day 13](day_13) | Knights of the Dinner Table            | :star::star::star:             |

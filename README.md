@@ -27,3 +27,4 @@ make test
 | [Day 08](day_08) | Matchsticks                            | :star::star:                   |
 | [Day 09](day_09) | All in a Single Night                  | :star::star:                   |
 | [Day 10](day_10) | Elves Look, Elves Say                  | :star::star:                   |
+| [Day 11](day_11) | Corporate Policy                       | :star::star:                   |

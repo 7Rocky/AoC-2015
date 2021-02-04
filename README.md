@@ -31,3 +31,4 @@ make test
 | [Day 12](day_12) | JSAbacusFramework.io                   | :star::star:                   |
 | [Day 13](day_13) | Knights of the Dinner Table            | :star::star::star:             |
 | [Day 14](day_14) | Reindeer Olympics                      | :star::star:                   |
+| [Day 15](day_15) | Science for Hungry People              | :star::star::star:             |

@@ -32,3 +32,4 @@ make test
 | [Day 13](day_13) | Knights of the Dinner Table            | :star::star::star:             |
 | [Day 14](day_14) | Reindeer Olympics                      | :star::star:                   |
 | [Day 15](day_15) | Science for Hungry People              | :star::star::star:             |
+| [Day 16](day_16) | Aunt Sue                               | :star::star:                   |

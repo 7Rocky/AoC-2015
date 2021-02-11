@@ -15,8 +15,6 @@ const getInput = async () => {
 const main = async () => {
   const suesData = await getInput()
 
-  const sues = []
-
   const knownData = {
     children: 3,
     cats: 7,
@@ -30,17 +28,20 @@ const main = async () => {
     perfumes: 1
   }
 
-  for (const d in knownData) {
-    const regexp = `Sue (\\d+):.* ${d}: (\\d+).*`
+  const sues = suesData.map(sueData => {
+    let sue = {}
 
-    suesData.forEach(sue => {
-      const match = sue.match(regexp)
+    for (const data in knownData) {
+      const regexp = `Sue (\\d+):.* ${data}: (\\d+).*`
+      const match = sueData.match(regexp)
 
       if (match) {
-        sues[match[1] - 1] = { [d]: Number(match[2]), ...sues[match[1] - 1] }
+        sue = { [data]: Number(match[2]), ...sue }
       }
-    })
-  }
+    }
+
+    return sue
+  })
 
   for (const sue of sues) {
     sue.match = true

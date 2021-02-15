@@ -34,3 +34,4 @@ make test
 | [Day 15](day_15) | Science for Hungry People              | :star::star::star:             |
 | [Day 16](day_16) | Aunt Sue                               | :star::star:                   |
 | [Day 17](day_17) | No Such Thing as Too Much              | :star::star::star:             |
+| [Day 18](day_18) | Like a GIF For Your Yard               | :star::star::star:             |

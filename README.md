@@ -35,3 +35,4 @@ make test
 | [Day 16](day_16) | Aunt Sue                               | :star::star:                   |
 | [Day 17](day_17) | No Such Thing as Too Much              | :star::star::star:             |
 | [Day 18](day_18) | Like a GIF For Your Yard               | :star::star::star:             |
+| [Day 19](day_19) | Medicine for Rudolph                   | :star::star::star::star:       |

@@ -56,69 +56,68 @@ const playerHitpoints = 100
 const makeCombinations = () => {
   const combinations = []
 
-  for (const w of weapons) {
-    combinations.push(new Player(playerHitpoints, w.damage, w.armor, w.cost))
-  }
-
-  for (const w of weapons) {
-    for (const a of armors) {
-      combinations.push(
-        new Player(playerHitpoints, w.damage + a.damage, w.armor + a.armor, w.cost + a.cost)
-      )
-    }
-  }
-
-  for (const w of weapons) {
-    for (const r of rings) {
-      combinations.push(
-        new Player(playerHitpoints, w.damage + r.damage, w.armor + r.armor, w.cost + r.cost)
-      )
-    }
-  }
-
-  for (const w of weapons) {
-    for (const a of armors) {
-      for (const r of rings) {
-        combinations.push(
-          new Player(
-            playerHitpoints,
-            w.damage + a.damage + r.damage,
-            w.armor + a.armor + r.armor,
-            w.cost + a.cost + r.cost
-          )
-        )
-      }
-    }
-  }
-
-  for (const w of weapons) {
-    for (const r1 of rings) {
-      for (const r2 of rings.filter(r => r.name !== r1.name)) {
-        combinations.push(
-          new Player(
-            playerHitpoints,
-            w.damage + r1.damage + r2.damage,
-            w.armor + r1.armor + r2.armor,
-            w.cost + r1.cost + r2.cost
-          )
-        )
-      }
-    }
-  }
-
-  for (const w of weapons) {
-    for (const a of armors) {
-      for (const r1 of rings) {
-        for (const r2 of rings.filter(r => r.name !== r1.name)) {
-          combinations.push(
-            new Player(
-              playerHitpoints,
-              w.damage + a.damage + r1.damage + r2.damage,
-              w.armor + a.armor + r1.armor + r2.armor,
-              w.cost + a.cost + r1.cost + r2.cost
+  for (const c of [
+    [0, 0],
+    [0, 1],
+    [0, 2],
+    [1, 0],
+    [1, 1],
+    [1, 2]
+  ]) {
+    for (const w of weapons) {
+      if (c[0] === 1) {
+        for (const a of armors) {
+          if (c[1] === 1) {
+            for (const r of rings) {
+              combinations.push(
+                new Player(
+                  playerHitpoints,
+                  w.damage + a.damage + r.damage,
+                  w.armor + a.armor + r.armor,
+                  w.cost + a.cost + r.cost
+                )
+              )
+            }
+          } else if (c[1] === 2) {
+            for (const r1 of rings) {
+              for (const r2 of rings.filter(r => r.name !== r1.name)) {
+                combinations.push(
+                  new Player(
+                    playerHitpoints,
+                    w.damage + a.damage + r1.damage + r2.damage,
+                    w.armor + a.armor + r1.armor + r2.armor,
+                    w.cost + a.cost + r1.cost + r2.cost
+                  )
+                )
+              }
+            }
+          } else {
+            combinations.push(
+              new Player(playerHitpoints, w.damage + a.damage, w.armor + a.armor, w.cost + a.cost)
             )
+          }
+        }
+      } else if (c[1] === 1) {
+        for (const r of rings) {
+          combinations.push(
+            new Player(playerHitpoints, w.damage + r.damage, w.armor + r.armor, w.cost + r.cost)
           )
         }
+      } else if (c[1] === 2) {
+        for (const r1 of rings) {
+          for (const r2 of rings.filter(r => r.name !== r1.name)) {
+            combinations.push(
+              new Player(
+                playerHitpoints,
+                w.damage + r1.damage + r2.damage,
+                w.armor + r1.armor + r2.armor,
+                w.cost + r1.cost + r2.cost
+              )
+            )
+          }
+        }
+      } else {
+        combinations.push(new Player(playerHitpoints, w.damage, w.armor, w.cost))
       }
     }
   }

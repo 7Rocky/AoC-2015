@@ -38,3 +38,4 @@ make test
 | [Day 19](day_19) | Medicine for Rudolph                   | :star::star::star::star:       |
 | [Day 20](day_20) | Infinite Elves and Infinite Houses     | :star::star::star::star:       |
 | [Day 21](day_21) | RPG Simulator 20XX                     | :star::star:                   |
+| [Day 22](day_22) | Wizard Simulator 20XX                  | :star::star::star:             |
